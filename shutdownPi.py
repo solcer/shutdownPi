@@ -13,6 +13,7 @@ def shutdown(buton):
 	print "bye bye..."
 	os.system("sudo shutdown -h now")
 
+
 		
 buton = 11										#Buton'un baglanacagi pin numarasi
 GPIO.setmode(GPIO.BOARD)
