@@ -30,7 +30,9 @@ def shutdown(buton):
 			print t0
 			print "t1: "
 			print t1
-	if shutdown=1:
+		if shutdown==1:							#while True'dan cikmak icin
+			break
+	if shutdown==1:
 		print "bye bye..."
 		os.system("sudo shutdown -h now")
 
