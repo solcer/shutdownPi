@@ -19,7 +19,6 @@ def shutdown(buton):
 			while GPIO.input(buton) == False:				#butona basılı tutulduğu sürece bekliyoruz
 				t1 = time.clock()					#t1'e yeni zamanı alıyoruz
 				if t1-t0>9 :
-					print "ls calistiriliyor	"
 					os.system("sudo shutdown -h now")
 				if t1-fark>1 :					#
 					print str(t1-t0) +"sn"
