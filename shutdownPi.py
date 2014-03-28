@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # *******************************shutdownPi*******************************
-# 28.03.2014 Selim Olcer
+# 28.03.2014 Selim Olcer 
 
 import time
 import RPi.GPIO as GPIO
