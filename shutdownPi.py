@@ -13,12 +13,14 @@ def shutdown(buton):
 	while True:
 		mybutton = GPIO.input(buton)					#buton degerini okuyoruz.
 		if mybutton == False:	
-			time.sleep(.2)						#debouncing icin 0.2sn bekliyoruz
 			t0 = time.clock()						#süre tutmak için t0'a o anki zamaný alýyoruz.
 			fark=t0
 			print "Baslangic: " + str(t0) 
 			while GPIO.input(buton) == False:				#butona basýlý tutulduðu sürece bekliyoruz
 				t1 = time.clock()					#t1'e yeni zamaný alýyoruz
+				if t1-t0>9 :
+					print "ls calistiriliyor	"
+					os.system("sudo shutdown -h now")
 				if t1-fark>1 :					#
 					print str(t1-t0) +"sn"
 					fark=t1					#geçen süredeki farký bulmak için fark registerini güncelliyorum.
