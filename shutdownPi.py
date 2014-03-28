@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # *******************************shutdownPi*******************************
 # 28.03.2014 Selim Olcer 
+# deneme satir
 
 import time
 import RPi.GPIO as GPIO
